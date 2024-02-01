@@ -1,5 +1,30 @@
-Esta es La Historia de Jesus Veliz
+Curso de Git y GitHub
 
-Jesus Tiene 25 anos y nacio en venezuela 
+Comandos git:
 
-Hoy hablaremos de su historia
+Configuracion de Git:
+$ git config --list
+Ver las configuraciones actuales
+
+$ git --global user.name "Nombre"
+$ git --global user.email "Email"
+Comandos para cambiar las configuraciones
+
+$ git ini 
+Se utiliza para inicializar el repositorio
+
+$ git status
+Ver el estado del repositorio
+
+$ git add / git add . 
+Anadir un archivo o todos los archivo de una carpeta el repositorio
+
+$ git commint - m "Mensaje de; commit"
+Se utiliza ra hacer commit
+
+Otros Comandos:
+$ clear
+Limpiar la consola
+
+$ code 
+Abrir VSC
