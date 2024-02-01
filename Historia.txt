@@ -31,6 +31,13 @@ Muetra todos los commit
 $ git diff
 Se utiliza para comparar commits
 
+$ git checkout master (Archivo) / codigo commit (archivo)
+Traer una version antigua o restaurar la version actual de un archivo
+
+
+$ git reset  (Codigo del commit) --hard --soft
+
+
 Otros Comandos:
 $ clear
 Limpiar la consola
@@ -38,5 +45,3 @@ Limpiar la consola
 $ code 
 Abrir VSC
 
-Nueva Version Test
-Area de Prueba 
