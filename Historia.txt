@@ -1,4 +1,4 @@
-Curso de Git y GitHub:
+Curso de Git y GitHub:clear
 
 Comandos git:
 
@@ -25,9 +25,18 @@ Se utiliza ra hacer commit
 $ git show
 Muestra la ultima modificacion
 
+$ git log
+Muetra todos los commit
+
+$ git diff
+Se utiliza para comparar commits
+
 Otros Comandos:
 $ clear
 Limpiar la consola
 
 $ code 
 Abrir VSC
+
+Nueva Version Test
+
