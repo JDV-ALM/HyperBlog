@@ -34,11 +34,17 @@ Se utiliza para comparar commits
 $ git checkout master (Archivo) / codigo commit (archivo)
 Traer una version antigua o restaurar la version actual de un archivo
 
+$ git checkout (rama)
+Nos permite movernos entre ramas
+
 $ git reset  (Codigo del commit) --hard --soft
 Ir y borrar las versiones 
 
 $ git commit -am
 Es la union del Git add con Git Commit
+
+esc + shift + ZZ / Q
+Salir de Todo
 
 Otros Comandos:
 $ clear
