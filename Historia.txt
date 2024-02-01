@@ -17,7 +17,7 @@ $ git status
 Ver el estado del repositorio
 
 $ git add / git add . 
-Anadir un archivo o todos los archivo de una carpeta el repositorio
+Anadir un archivo o todos los archivo de una carpeta al estado Tracked (Entra en Staging)
 
 $ git commint - m "Mensaje de; commit"
 Se utiliza ra hacer commit
