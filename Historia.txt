@@ -43,6 +43,12 @@ Ir y borrar las versiones
 $ git commit -am
 Es la union del Git add con Git Commit
 
+$ git merge
+Une algura rama con la rama actual eliminando la otra 
+
+$ git branch 
+Me indica las ramas y en cual estoy
+
 esc + shift + ZZ / Q
 Salir de Todo
 
