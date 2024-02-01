@@ -22,6 +22,9 @@ Anadir un archivo o todos los archivo de una carpeta el repositorio
 $ git commint - m "Mensaje de; commit"
 Se utiliza ra hacer commit
 
+$ git show
+Muestra la ultima modificacion
+
 Otros Comandos:
 $ clear
 Limpiar la consola
