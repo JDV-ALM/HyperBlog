@@ -98,3 +98,12 @@ $ git tag -a nombre -m "Mensaje" HASH
 
 Ver Tag asignado
 $git show-ref --tags
+
+Enviar Tags
+$ git push origin main --tags
+
+Eliminar tags
+$ git push origin main :refs/tags/v0.12
+
+$ gitk 
+Vista Grafica
