@@ -77,6 +77,10 @@ Validamos
 $ git push origin main
 Hacer el push a servidor. Nos va a dar error porque hay que hacer el pull primero. Importante cambiar la rama a main 
 
+$ git pull origin main --allow-unrelated-histories
+
+
+
 Otros Comandos:
 $ clear
 Limpiar la consola
