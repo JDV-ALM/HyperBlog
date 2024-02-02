@@ -17,11 +17,7 @@ h1{
 }
 
 #cabecera{
-<<<<<<< HEAD
     background-color: rgb(0, 7, 102);
-=======
-    background-color: rgb(102, 7, 0);
->>>>>>> cabecera
     color: white;
     display: flex;
     justify-content: center;
