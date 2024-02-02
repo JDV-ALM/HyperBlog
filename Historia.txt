@@ -88,3 +88,13 @@ Limpiar la consola
 $ code 
 Abrir VSC
 
+
+
+Crear Alias
+$ alias nombre="Codigo"
+
+Crear un Tag 
+$ git tag -a nombre -m "Mensaje" HASH
+
+Ver Tag asignado
+$git show-ref --tags
