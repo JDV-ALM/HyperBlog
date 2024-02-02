@@ -6,8 +6,8 @@ Configuracion de Git:
 $ git config --list
 Ver las configuraciones actuales
 
-$ git --global user.name "Nombre"
-$ git --global user.email "Email"
+$ git config --global user.name "Nombre"
+$ git config --global user.email "Email"
 Comandos para cambiar las configuraciones
 
 $ git ini 
@@ -49,8 +49,33 @@ Une algura rama con la rama actual eliminando la otra
 $ git branch 
 Me indica las ramas y en cual estoy
 
+$ git branch -m 
+Cambiar el nombre de la rama
+
 esc + shift + ZZ / Q
 Salir de Todo
+
+
+Crear Llaves ssh
+$ ssh-keygen -t rsa -b 4096 -C "Correo"
+Alli asignamos la contrasena y si queremos guardamos la llave en otra carpeta.
+
+$ eval $(ssh-agent -s) - eval $"ssh-agent -s" (MAC Clase 19) 
+Con este evaluamos que el servidos de SSH esta corriendo 
+
+$ ssh-add ~/.ssh/id_rsa
+Agregamos la llave al sistema
+
+conectar Github - Anadimos la llave a Github y luego
+
+$ git remote add origin LINK
+conectamos el git
+
+$ git remote -v 
+Validamos 
+
+$ git push origin main
+Hacer el push a servidor. Nos va a dar error porque hay que hacer el pull primero. Importante cambiar la rama a main 
 
 Otros Comandos:
 $ clear
