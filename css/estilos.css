@@ -16,9 +16,16 @@ h1{
     font-size: 50px;
 }
 
-#cabecera{
-    background-color: rgb(0, 7, 102);
-    color: white;
+#logo {
+    width: 30;
+    vertical-align: middle; 
+    margin-right: 10;
+    
+}
+
+#cabecera {
+    background-color: rgb(255, 225, 225);
+    color: rgb(126, 0, 0);
     display: flex;
     justify-content: center;
     margin: 0 0 10 0;
