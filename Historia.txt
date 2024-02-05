@@ -107,3 +107,7 @@ $ git push origin main :refs/tags/v0.12
 
 $ gitk 
 Vista Grafica
+
+
+Clonar repositorio 
+$ git clone 
