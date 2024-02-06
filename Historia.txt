@@ -80,6 +80,15 @@ Hacer el push a servidor. Nos va a dar error porque hay que hacer el pull primer
 $ git pull origin main --allow-unrelated-histories
 
 
+$ git stash (branch new)
+Guarda temporalmente un cambio
+
+$ git stash list 
+Ver los cambios
+
+$ git stash pop
+Suelta los cambios
+
 
 Otros Comandos:
 $ clear
