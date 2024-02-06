@@ -89,6 +89,9 @@ Ver los cambios
 $ git stash pop
 Suelta los cambios
 
+$ git stash drop
+Borra el stash
+
 
 Otros Comandos:
 $ clear
