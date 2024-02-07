@@ -123,3 +123,48 @@ Vista Grafica
 
 Clonar repositorio 
 $ git clone 
+
+Borrar archivos no traqueados para limpiar el repo (Prueba)
+$ git clean --dry-run
+
+Borrar archivos no traqueados para limpiar el repo (Prueba)
+$ git clean -f
+
+
+
+Traer un commit de otra rama
+$ cherry-pick (HASH)
+
+
+
+Buscar palabras 
+$ git grep -n (palabra)
+
+Buscar en commit 
+$ git log -s ("palabra")
+
+
+
+$ git shortlog -sn
+Muestra cuantos commit han hecho cada miembros del equipo.
+
+$ git shortlog -sn --all
+Muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado
+
+$ git shortlog -sn --all --no-merge
+Muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges
+
+$ git blame ARCHIVO
+Muestra quien hizo cada cosa linea por linea
+
+$ git COMANDO --help
+Muestra como funciona el comando.
+
+$ git blame ARCHIVO -Llinea_inicial,linea_final
+Muestra quien hizo cada cosa linea por linea indicándole desde que linea ver ejemplo -L35,50
+
+$ git branch -r 
+Muestran todas las ramas remotas
+
+$ git branch -a
+Muestran todas las ramas tanto locales como remotas
