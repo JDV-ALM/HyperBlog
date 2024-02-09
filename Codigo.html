@@ -6,15 +6,74 @@
     <body>
         <div id="container">
             <div id="cabecera">
-                <img id="logo" src="image/F9.png" />HyperBlog en la Nube 2.0</div>
+                HyperBlog Git Comands</div>
+                <div id="imagen">
+                    <img id="image" src="Image/Git-logo.svg.png" alt="">
+                </div>
             <div id="post">
-                <h1>Blog de Git</h1>
-                <p>Primer parrafo</p>
-                <p><img src="mk1.png" width="100%"></p>
-                <p>Segundo Parrafo corregido para la rama</p>
-                <p>Suscribete y dale Like</p>
+                <p><span style="color: #ff6600;"><strong>Configuracion de Git:</strong></span></p>
+                <p><strong>$ git config --list</strong><br />Ver las configuraciones actuales</p>
+                <p><strong>$ git config --global user.name "Nombre"</strong><br /><strong>$ git config --global user.email "Email"</strong><br />Comandos para cambiar las configuraciones</p>
+                <p><strong><span style="color: #ff6600;">Iniciando el Repo</span></strong></p>
+                <p><strong>$ git ini</strong> <br />Se utiliza para inicializar el repositorio</p>
+                <p><strong>$ git status</strong><br />Ver el estado del repositorio</p>
+                <p><strong>$ git add / git add .</strong> <br />Anadir un archivo o todos los archivo de una carpeta al estado Tracked (Entra en Staging)</p>
+                <p><strong>$ git commint - m "Mensaje de; commit"</strong><br />Se utiliza ra hacer commit</p>
+                <p><strong>$ git show</strong><br />Muestra la ultima modificacion</p>
+                <p><strong>$ git log</strong><br />Muetra todos los commit</p>
+                <p><strong>$ git diff</strong><br />Se utiliza para comparar commits</p>
+                <p><strong>$ git checkout master (Archivo) / codigo commit (archivo)</strong><br />Traer una version antigua o restaurar la version actual de un archivo</p>
+                <p><strong>$ git checkout (rama)</strong><br />Nos permite movernos entre ramas</p>
+                <p><strong>$ git reset (Codigo del commit) --hard --soft</strong><br />Ir y borrar las versiones</p>
+                <p><strong>$ git commit -am</strong><br />Es la union del Git add con Git Commit</p>
+                <p><strong>$ git merge</strong><br />Une algura rama con la rama actual eliminando la otra</p>
+                <p><strong>$ git branch</strong> <br />Me indica las ramas y en cual estoy</p>
+                <p><strong>$ git branch -m</strong> <br />Cambiar el nombre de la rama</p>
+                <p><strong>esc + shift + ZZ / Q</strong><br />Salir de Todo</p>
+                <p><br /><span style="color: #ff6600;"><strong>Crear Llaves ssh</strong></span></p>
+                <p><br /><strong>$ ssh-keygen -t rsa -b 4096 -C "Correo"</strong><br />Alli asignamos la contrasena y si queremos guardamos la llave en otra carpeta.</p>
+                <p><strong>$ eval $(ssh-agent -s) - eval $"ssh-agent -s" (MAC Clase 19)</strong> <br />Con este evaluamos que el servidos de SSH esta corriendo</p>
+                <p><strong>$ ssh-add ~/.ssh/id_rsa</strong><br />Agregamos la llave al sistema</p>
+                <p><strong><span style="color: #ff6600;">conectar Github - Anadimos la llave a Github y luego</span></strong></p>
+                <p><strong>$ git remote add origin LINK</strong><br />conectamos el git</p>
+                <p><strong>$ git remote -v</strong> <br />Validamos</p>
+                <p><strong>$ git push origin main</strong><br />Hacer el push a servidor. Nos va a dar error porque hay que hacer el pull primero. Importante cambiar la rama a main</p>
+                <p><strong>$ git pull origin main --allow-unrelated-histories</strong></p>
+                <p>&nbsp;</p>
+                <p><strong><span style="color: #ff6600;">Otros comandos de Git</span></strong></p>
+                <p><br /><strong>$ git stash (branch new)</strong><br />Guarda temporalmente un cambio</p>
+                <p><strong>$ git stash list</strong> <br />Ver los cambios</p>
+                <p><strong>$ git stash pop</strong><br />Suelta los cambios</p>
+                <p><strong>$ git stash drop</strong><br />Borra el stash</p>
+                <p>&nbsp;</p>
+                <p><br /><strong>$ clear</strong><br />Limpiar la consola</p>
+                <p><strong>$ code</strong> <br />Abrir VSC</p>
+                <p>&nbsp;</p>
+                <p>Crear Alias<br /><strong>$ alias nombre="Codigo"</strong></p>
+                <p>Crear un Tag <br /><strong>$ git tag -a nombre -m "Mensaje" HASH</strong></p>
+                <p>Ver Tag asignado<br /><strong>$git show-ref --tags</strong></p>
+                <p>Enviar Tags<br /><strong>$ git push origin main --tags</strong></p>
+                <p>Eliminar tags<br /><strong>$ git push origin main :refs/tags/v0.12</strong></p>
+                <p><strong>$ gitk</strong> <br />Vista Grafica</p>
+                <p><br />Clonar repositorio <br /><strong>$ git clone</strong></p>
+                <p>Borrar archivos no traqueados para limpiar el repo (Prueba)<br /><strong>$ git clean --dry-run</strong></p>
+                <p>Borrar archivos no traqueados para limpiar el repo (Prueba)<br /><strong>$ git clean -f</strong></p>
+                <p>&nbsp;</p>
+                <p>Traer un commit de otra rama<br /><strong>$ cherry-pick (HASH)</strong></p>
+                <p>&nbsp;</p>
+                <p>Buscar palabras <br /><strong>$ git grep -n (palabra)</strong></p>
+                <p>Buscar en commit <br /><strong>$ git log -s ("palabra")</strong></p>
+                <p>&nbsp;</p>
+                <p><strong>$ git shortlog -sn</strong><br />Muestra cuantos commit han hecho cada miembros del equipo.</p>
+                <p><strong>$ git shortlog -sn --all</strong><br />Muestra cuantos commit han hecho cada miembros del equipo hasta los que han sido eliminado</p>
+                <p><strong>$ git shortlog -sn --all --no-merge</strong><br />Muestra cuantos commit han hecho cada miembros quitando los eliminados sin los merges</p>
+                <p><strong>$ git blame ARCHIVO</strong><br />Muestra quien hizo cada cosa linea por linea</p>
+                <p><strong>$ git COMANDO --help</strong><br />Muestra como funciona el comando.</p>
+                <p><strong>$ git blame ARCHIVO -Llinea_inicial,linea_final</strong><br />Muestra quien hizo cada cosa linea por linea indic&aacute;ndole desde que linea ver ejemplo -L35,50</p>
+                <p><strong>$ git branch -r</strong> <br />Muestran todas las ramas remotas</p>
+                <p>$ git branch -a<br />Muestran todas las ramas tanto locales como remotas</p>
             </div>        
-        <div id="footer"> Creado por Platzi <3 </div>
+        <div id="footer"> Creado por Platzi </div>
         </div>        
 
     </body>
